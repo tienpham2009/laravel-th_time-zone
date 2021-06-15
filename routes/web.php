@@ -22,5 +22,6 @@ Route::get('/{time?}', function ($timezone){
         $time = new DateTime(date('Y-m-d H:i:s'),new DateTimeZone('UTC'));
         $time->setTimezone(new DateTimeZone(str_replace('-', '/', $timezone)));
         echo 'Múi giờ bạn chọn ' . $timezone . ' hiện tại đang là: ' . $time->format('d-m-Y H:i:s');
+        echo "1123";
     }
 });
